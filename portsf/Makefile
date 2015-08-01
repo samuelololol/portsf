@@ -3,7 +3,7 @@ POBJS = ieee80.o portsf.o
 
 # CFLAGS = -I ../include -D_DEBUG -g
 # on strange 64 bit platforms must define CPLONG64
-CFLAGS = -Dunix -O2 -I ../include
+override CFLAGS += -Dunix -O2 -I ../include
 
 CC=gcc
 
